@@ -7,8 +7,20 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+#changeGrid {
+    margin-top: 20px;
+    padding: 10px 26px;
+    background-color: aqua;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .container {

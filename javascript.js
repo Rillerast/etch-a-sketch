@@ -9,6 +9,16 @@ function populateGrid(tiles) {
         tile.style.width = side + "px";
         tile.classList.add("tile");
         container.appendChild(tile);
+
+        tile.addEventListener("mouseover", (e) => {
+            tile.style.backgroundColor = "blue";
+            tile.style.transitionDuration = "0s";
+        });
+
+        tile.addEventListener("mouseleave", (e) => {
+            tile.style.backgroundColor = "white";
+            tile.style.transitionDuration = "5s";
+        })
     }
 
 }
