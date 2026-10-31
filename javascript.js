@@ -29,7 +29,7 @@ function populateGrid(tiles) {
         container.appendChild(tile);
 
         tile.addEventListener("mouseover", (e) => {
-            tile.style.backgroundColor = "blue";
+            tile.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
             tile.style.transitionDuration = "0s";
         });
 
